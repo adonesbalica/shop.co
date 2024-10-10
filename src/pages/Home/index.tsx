@@ -1,4 +1,45 @@
+import { DisplayShowcase } from '../../components/DisplayShowcase'
 import { DisplayLogos } from './components/DisplayLogos'
+
+interface Image {
+  url: string
+  name: string
+  rate: string
+  price: string
+  originalPriceWithoutDiscount?: string
+  discount?: string
+}
+
+const newArrivals: Image[] = [
+  {
+    name: 'T-SHIRT WITH TAPE DETAILS',
+    price: '120',
+    rate: '4.5',
+    url: 'src\\assets\\clothesNewArrivals\\image7.svg',
+  },
+  {
+    name: 'T-SHIRT WITH TAPE DETAILS',
+    price: '120',
+    rate: '3.5',
+    url: 'src\\assets\\clothesNewArrivals\\image8.svg',
+    originalPriceWithoutDiscount: '260',
+    discount: '20',
+  },
+  {
+    name: 'T-SHIRT WITH TAPE DETAILS',
+    price: '120',
+    rate: '2.5',
+    url: 'src\\assets\\clothesNewArrivals\\image9.svg',
+  },
+  {
+    name: 'T-SHIRT WITH TAPE DETAILS',
+    price: '120',
+    rate: '4.1',
+    url: 'src\\assets\\clothesNewArrivals\\image10.svg',
+    originalPriceWithoutDiscount: '160',
+    discount: '30',
+  },
+]
 
 export function Home() {
   return (
@@ -46,7 +87,21 @@ export function Home() {
         </div>
       </div>
       <DisplayLogos />
-      <div></div>
+      <div className="px-28">
+        <DisplayShowcase
+          title="New Arrivals"
+          linkText="View All"
+          images={newArrivals}
+        />
+
+        <div className="flex border border-[#DAD8D9]"></div>
+
+        <DisplayShowcase
+          title="Top Selling"
+          linkText="View All"
+          images={newArrivals}
+        />
+      </div>
     </div>
   )
 }
