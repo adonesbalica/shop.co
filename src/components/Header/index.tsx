@@ -43,7 +43,7 @@ export function Header() {
               <a href="#">On Sale</a>
             </li>
             <li>
-              <a href="#">New Ar rive</a>
+              <a href="#">New Arrivals</a>
             </li>
             <li>
               <a href="#">Brands</a>
