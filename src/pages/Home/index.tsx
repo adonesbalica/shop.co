@@ -1,5 +1,6 @@
 import { DisplayShowcase } from '../../components/DisplayShowcase'
 import { BrowserByDressStyle } from './components/BrowserByDressStyle'
+import { CommentsArea } from './components/CommentsArea'
 import { DisplayLogos } from './components/DisplayLogos'
 
 interface Image {
@@ -105,6 +106,9 @@ export function Home() {
       </div>
       <div className="px-28">
         <BrowserByDressStyle />
+      </div>
+      <div className="px-28">
+        <CommentsArea />
       </div>
     </div>
   )
