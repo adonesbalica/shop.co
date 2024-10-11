@@ -1,4 +1,5 @@
 import { DisplayShowcase } from '../../components/DisplayShowcase'
+import { BrowserByDressStyle } from './components/BrowserByDressStyle'
 import { DisplayLogos } from './components/DisplayLogos'
 
 interface Image {
@@ -101,6 +102,9 @@ export function Home() {
           linkText="View All"
           images={newArrivals}
         />
+      </div>
+      <div className="px-28">
+        <BrowserByDressStyle />
       </div>
     </div>
   )
