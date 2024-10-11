@@ -1,5 +1,3 @@
-import casual from '../../../../assets/dressStyle/casual.svg'
-
 export function BrowserByDressStyle() {
   return (
     <div className="bg-[#F0F0F0] flex flex-col rounded-xl">
