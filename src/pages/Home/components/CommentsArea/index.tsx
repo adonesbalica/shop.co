@@ -42,7 +42,7 @@ const comments: Commentary[] = [
 //
 export function CommentsArea() {
   return (
-    <div className="mb-20 overflow-x-hidden ">
+    <div className="mb-48 overflow-x-hidden ">
       <div className="flex justify-between">
         <p className="my-16 text-5xl font-oswald font-bold text-left">
           OUR HAPPY CUSTOMERS
